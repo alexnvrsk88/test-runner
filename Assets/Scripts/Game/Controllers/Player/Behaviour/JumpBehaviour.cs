@@ -6,7 +6,7 @@ namespace Runner.Game.Controllers.Player.Behaviour
     /// <summary>
     /// Поведение прыжка. Дает моментальный импульс по вертикали игроку
     /// </summary>
-    public class JumpBehaviour : BehaviourAbstract
+    public sealed class JumpBehaviour : BehaviourAbstract
     {
         public override bool IsActive => _isGrounded == false;
 
